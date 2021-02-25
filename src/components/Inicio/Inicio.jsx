@@ -53,7 +53,7 @@ export const Inicio = () => {
                     src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/58433/monkey-emoji-clipart-xl.png" 
                     alt="img" 
                     id="img"
-                    draggable="false"
+                    draggable="false" 
                 />
             </div>
 

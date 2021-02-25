@@ -16,7 +16,7 @@ export const Pagination = ({pagination}) => {
                 <li className="page-item">
                     <a 
                         className="page-link" 
-                        href={`/search/${sort}/${parseInt(page) > 1 ? parseInt(page) -1 : parseInt(page)}${filter ? `/${filter}` : ""}${location.search}`}
+                        href={`/MONO-/search/${sort}/${parseInt(page) > 1 ? parseInt(page) -1 : parseInt(page)}${filter ? `/${filter}` : ""}${location.search}`}
                     >
                         Anterior
                     </a>
@@ -26,7 +26,7 @@ export const Pagination = ({pagination}) => {
                     <li className="page-item" key={i}>
                         <a 
                             className="page-link" 
-                            href={`/search/${sort}/${parseInt(e)}${filter ? `/${filter}` : ""}${location.search}`}
+                            href={`/MONO-/search/${sort}/${parseInt(e)}${filter ? `/${filter}` : ""}${location.search}`}
                         >
                             {e}
                         </a>
@@ -36,7 +36,7 @@ export const Pagination = ({pagination}) => {
                 <li className="page-item">
                     <a 
                         className="page-link" 
-                        href={`/search/${sort}/${parseInt(page) < keys.length ? parseInt(page) +1 : parseInt(page)}${filter ? `/${filter}` : ""}${location.search}`}
+                        href={`/MONO-/search/${sort}/${parseInt(page) < keys.length ? parseInt(page) +1 : parseInt(page)}${filter ? `/${filter}` : ""}${location.search}`}
                     >
                         Siguiente
                     </a>

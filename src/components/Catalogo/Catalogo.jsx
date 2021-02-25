@@ -91,7 +91,7 @@ export const Catalogo = ({match}) => {
         pagination[key].push(propCopy[i]);
     };
 
-    if (location.pathname === `/search/${match.params.sort}/${match.params.page}`) {
+    if (location.pathname === `/MONO-/search/${match.params.sort}/${match.params.page}`) {
         prop = pagination[match.params.page]
     };
         
