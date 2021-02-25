@@ -50,7 +50,7 @@ export const Inicio = () => {
 
             <div className="col-md-6 primero">
                 <img 
-                    src="/monkey-img.png" 
+                    src="../../public/monkey-img.png" 
                     alt="img" 
                     id="img"
                     draggable="false"

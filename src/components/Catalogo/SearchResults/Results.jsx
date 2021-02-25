@@ -8,7 +8,7 @@ export const Results = ({products}) => {
         <div>
             {products && products.length === 0
             ?   <div className="d-flex flex-column align-items-center">
-                    <img src="/no-see-monkey.png" alt="logo" width="500" heigth="500" className="row"/>
+                    <img src="../../public/no-see-monkey.png" alt="logo" width="500" heigth="500" className="row"/>
                     <br/>
                     <h3 className="row">
                         No encontramos ningún resultado
