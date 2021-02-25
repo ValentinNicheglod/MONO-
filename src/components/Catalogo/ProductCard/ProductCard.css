@@ -1,0 +1,16 @@
+.green{
+    color: green
+}
+
+.red{
+    color: red;
+}
+
+.max-width{
+    max-width: 1000px;
+}
+
+.chip{
+    width: 120px;
+    margin: 10px;
+}

@@ -1,0 +1,25 @@
+#catalogo{
+    background-color: #EBF5DF;
+}
+
+#resultpage{
+    padding: 30px;    
+    margin: 0px;
+}
+
+.footer{
+    width: 1583px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+}
+
+.maxwidth{
+    width: 1583px;
+    margin: 0px;
+}
+
+

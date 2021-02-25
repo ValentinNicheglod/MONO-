@@ -1,0 +1,13 @@
+#filter{
+    background-color: white;
+    padding: 20px;
+}
+
+.filter{
+    display: block;
+    padding: 20px;
+}
+
+.selected{
+    font-weight: bold;
+}

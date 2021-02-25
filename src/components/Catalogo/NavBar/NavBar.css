@@ -1,0 +1,33 @@
+#nav{
+    background-color: #FEC601;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+}
+
+#icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes nav {
+    0% {color: #26547C}
+    20% {color: #06D6A0;}
+    40% {color: #EF476F}
+    60% {color: #DD2C2C}
+    80% {color: #53FF45}
+    100% {color: #26547C}
+}
+
+#navtitle{
+    animation-name: nav;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-family: 'Fredoka One', cursive;
+    font-size: 56px;
+}
+

@@ -1,0 +1,108 @@
+@keyframes color {
+    0% {background-color: #26547C}
+    20% {background-color: #06D6A0}
+    40% {background-color: #EF476F}
+    60% {background-color: #DD2C2C}
+    80% {background-color: #53FF45}
+    100% {background-color: #26547C}
+}
+
+@keyframes mono {
+        0% {color: #26547C}
+        20% {color: #06D6A0;}
+        40% {color: #EF476F}
+        60% {color: #DD2C2C}
+        80% {color: #53FF45}
+        100% {color: #26547C}
+}
+
+@keyframes wilde {
+    0%{
+        top: -5000px;
+    }
+    65%{
+        top: 0px;
+    }
+    70%{
+        top: -50px;
+    }
+    75%{
+        top: -50px;
+    }
+    80%{
+        top: 0px;
+    }
+    85%{
+        top: -20px;
+    }
+    90%{
+        top: 0px;
+    }
+    95%{
+        top: -10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+#hr {
+    display: block; 
+    height: 1px;
+    border: 0;
+    border-top: 4px dashed #dc3545;
+}
+
+#wild{
+    animation-name: wilde;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#app{
+    width: 1615px;
+    height: 757px;
+    background-color: #FEC601;
+}
+
+#img{
+    height: 645px;
+    width: 645px;
+    margin: 40px;
+    filter: saturate(130%)
+}
+
+#title{
+    font-family: 'Fredoka One', cursive;
+    color: #373737;
+}
+
+.primero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+.color{
+    animation: color 15s;
+    animation-iteration-count: infinite;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 20px dashed #FEC601;
+}
+
+.mono{
+    animation-name: mono;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
