@@ -50,7 +50,7 @@ export const Inicio = () => {
 
             <div className="col-md-6 primero">
                 <img 
-                    src="../../public/monkey-img.png" 
+                    src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/58433/monkey-emoji-clipart-xl.png" 
                     alt="img" 
                     id="img"
                     draggable="false"
