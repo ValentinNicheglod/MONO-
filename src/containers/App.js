@@ -10,8 +10,6 @@ function App() {
       <Switch>
         <Route exact path="/" component={Inicio}/>
         <Route path="/search/:sort/:page/:filter?" component={Catalogo}/>
-        <Route exact path="/MONO-/" component={Inicio}/>
-        <Route path="/MONO-/search/:sort/:page/:filter?" component={Catalogo}/>
       </Switch>
     </div>
   );

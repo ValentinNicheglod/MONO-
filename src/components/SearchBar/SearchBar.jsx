@@ -15,7 +15,8 @@ export const SearchBar = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        history.location.pathname === "/MONO-/"
+        console.log(history.location.pathname)
+        history.location.pathname === "/"
         ? history.push(`search/destacados/1?q=${search}`)
         : history.push(`?q=${search}`);
           window.location.reload();

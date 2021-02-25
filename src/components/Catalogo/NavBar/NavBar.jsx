@@ -18,7 +18,7 @@ export const NavBar = () => {
                 className="col-md-1"
                 id="icon"
             >
-                <Link to="/MONO-/"> {/* Link to main page | Link a pagina principal */}
+                <Link to="/"> {/* Link to main page | Link a pagina principal */}
                     <img 
                         className="icon"
                         src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/58433/monkey-emoji-clipart-xl.png"
@@ -30,7 +30,7 @@ export const NavBar = () => {
             </div>
             
             <div className="col-md-3">
-                <Link to="/MONO-/"> {/* Link to main page | Link a pagina principal */}
+                <Link to="/"> {/* Link to main page | Link a pagina principal */}
                     <h1 id="navtitle">
                         MONO...
                     </h1>

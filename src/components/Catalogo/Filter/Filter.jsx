@@ -10,7 +10,7 @@ export const Filter = ({name, query}) => {
     let history = useHistory();
 
     const handleDelete = () => {
-        history.replace(`/MONO-/search/${sort}/${page}${query}`) //Delete the param "filter" from URL | Elimina el param "filter" de la URL
+        history.replace(`/search/${sort}/${page}${query}`) //Delete the param "filter" from URL | Elimina el param "filter" de la URL
     };
     
     return(
@@ -45,21 +45,21 @@ export const Filter = ({name, query}) => {
                     Ordenar publicaciones
                 </h5>
                 <NavLink 
-                    to={`/MONO-/search/destacados/1${filter ? "/" + filter : ""}${query}`} 
+                    to={`/search/destacados/1${filter ? "/" + filter : ""}${query}`} 
                     activeClassName="selected"
                 >
                     Destacados
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/menor/${page}${filter ? "/" + filter : ""}${query}`} 
+                    to={`/search/menor/${page}${filter ? "/" + filter : ""}${query}`} 
                     activeClassName="selected"
                 >
                     Menor precio
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/mayor/${page}${filter ? "/" + filter : ""}${query}`} 
+                    to={`/search/mayor/${page}${filter ? "/" + filter : ""}${query}`} 
                     activeClassName="selected"
                 >
                     Mayor precio
@@ -73,14 +73,14 @@ export const Filter = ({name, query}) => {
                     Condición
                 </h5>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/nuevo${query}`} 
+                    to={`/search/${sort}/${page}/nuevo${query}`} 
                     activeClassName="selected"
                 >
                     Nuevo
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/usado${query}`} 
+                    to={`/search/${sort}/${page}/usado${query}`} 
                     activeClassName="selected"
                 >
                     Usado
@@ -94,21 +94,21 @@ export const Filter = ({name, query}) => {
                     Envío
                 </h5>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/envio gratis${query}`} 
+                    to={`/search/${sort}/${page}/envio gratis${query}`} 
                     activeClassName="selected"
                 >
                     Envío gratis
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/express${query}`} 
+                    to={`/search/${sort}/${page}/express${query}`} 
                     activeClassName="selected"
                 >
                     Express {/* Express filter is non functional | El filtro express no es funcional*/}
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/pick up${query}`} 
+                    to={`/search/${sort}/${page}/pick up${query}`} 
                     activeClassName="selected"
                 >
                     Pick Up
@@ -122,21 +122,21 @@ export const Filter = ({name, query}) => {
                     Descuentos {/* All discounts filters are not functional | Todos los filtros de descuentos no son funcionales*/}
                 </h5>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/descuento -10${query}`} 
+                    to={`/search/${sort}/${page}/descuento -10${query}`} 
                     activeClassName="selected"
                 >
                     Menos de 10%
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/desc. 10-20${query}`} 
+                    to={`/search/${sort}/${page}/desc. 10-20${query}`} 
                     activeClassName="selected"
                 >
                     Entre 10% y 20%
                 </NavLink>
                 <br/>
                 <NavLink 
-                    to={`/MONO-/search/${sort}/${page}/descuento +20${query}`} 
+                    to={`/search/${sort}/${page}/descuento +20${query}`} 
                     activeClassName="selected"
                 >
                     Más de 20%
