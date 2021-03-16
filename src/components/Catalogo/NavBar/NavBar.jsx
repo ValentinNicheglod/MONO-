@@ -15,7 +15,7 @@ export const NavBar = () => {
         >
 
             <div 
-                className="col-md-1"
+                className="col-md-1 col-sm-1 col-1"
                 id="icon"
             >
                 <Link to="/"> {/* Link to main page | Link a pagina principal */}
@@ -29,7 +29,7 @@ export const NavBar = () => {
                 </Link>
             </div>
             
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-5 col-5">
                 <Link to="/"> {/* Link to main page | Link a pagina principal */}
                     <h1 id="navtitle">
                         MONO...
@@ -37,7 +37,7 @@ export const NavBar = () => {
                 </Link>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6 col-6">
                 <SearchBar />
             </div>
 

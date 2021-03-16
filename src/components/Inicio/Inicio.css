@@ -1,3 +1,14 @@
+html body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+}
+
 @keyframes color {
     0% {background-color: #26547C}
     20% {background-color: #06D6A0}
@@ -8,12 +19,12 @@
 }
 
 @keyframes mono {
-        0% {color: #26547C}
-        20% {color: #06D6A0;}
-        40% {color: #EF476F}
-        60% {color: #DD2C2C}
-        80% {color: #53FF45}
-        100% {color: #26547C}
+    0% {color: #26547C}
+    20% {color: #06D6A0;}
+    40% {color: #EF476F}
+    60% {color: #DD2C2C}
+    80% {color: #53FF45}
+    100% {color: #26547C}
 }
 
 @keyframes wilde {
@@ -66,15 +77,15 @@ form{
     animation-timing-function: linear;
 }
 
-#app{
-    width: 1615px;
-    height: 757px;
+.main-p{
     background-color: #FEC601;
+    width: 100%;
+    margin: 0;
 }
 
 #img{
-    height: 645px;
-    width: 645px;
+    height: 90%;
+    width: 90%;
     margin: 40px;
     filter: saturate(130%)
 }

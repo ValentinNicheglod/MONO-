@@ -4,16 +4,18 @@ import "./Inicio.css";
 
 export const Inicio = () => {
 
+    const smallWidth = window.screen.width < 600
+    
     return(
 
         <div 
-            className="row"
-            id="app"
+            className="row main-p"
+            style={{height: window.innerHeight}}
         >
 
-            <div className="col-md-1 color"></div>
+            <div className="col-md-1 col-sm-2 col-2 color"/>
 
-            <div className="col-md-5 primero">
+            <div className="col-md-5 col-sm-10 col-10 primero">
                 <div className="row">
                     <div 
                         className="col-md-12" 
@@ -42,20 +44,23 @@ export const Inicio = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-md-10">
+                    <div className="col-md-10 col-sm-10 col-10">
         	            <SearchBar />
                     </div>  
                 </div>   
             </div>
 
-            <div className="col-md-6 primero">
-                <img 
-                    src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/58433/monkey-emoji-clipart-xl.png" 
-                    alt="img" 
-                    id="img"
-                    draggable="false" 
-                />
-            </div>
+            {
+                !smallWidth &&
+                    <div className="col-md-6 monkey-img primero">
+                        <img 
+                            src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/58433/monkey-emoji-clipart-xl.png" 
+                            alt="img" 
+                            id="img"
+                            draggable="false" 
+                        />
+                    </div>
+            }   
 
         </div>
 

@@ -3,12 +3,12 @@
 }
 
 #resultpage{
-    padding: 30px;    
+    padding: 2%;    
     margin: 0px;
 }
 
 .footer{
-    width: 1583px;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .maxwidth{
-    width: 1583px;
+    width: 100%;
     margin: 0px;
 }
 

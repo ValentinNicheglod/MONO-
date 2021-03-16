@@ -9,11 +9,13 @@ import {Results} from "./SearchResults/Results.jsx";
 import {Pagination} from "./Pagination/Pagination.jsx"
 
 import "./Catalogo.css";
+import SecondaryNavBar from "./SecondaryNavBar/SecondaryNavBar.jsx";
+import { Modal } from "@material-ui/core";
 
 export const Catalogo = ({match}) => {
 
     const [products, setProducts] = useState();
-
+    const [open, setOpen] = useState(false);
     const [loading, setLoading] = useState(true);
 
     const location = useLocation();
@@ -28,6 +30,9 @@ export const Catalogo = ({match}) => {
         .then(() => setLoading(false))
         // eslint-disable-next-line
     }, []);
+
+    const params = new URLSearchParams(location.search);
+    const smallWidth = window.screen.width < 600
 
     //Copy of products | Copia de products
     const productsCopy = products && products.map(e => e);
@@ -106,18 +111,41 @@ export const Catalogo = ({match}) => {
         <div id="catalogo">
             <div className="row maxwidth">
                 <NavBar />
+                {
+                    smallWidth && 
+                    <SecondaryNavBar
+                        name={params.get('q')}
+                        smallWidth={smallWidth}
+                        open={open}
+                        setOpen={setOpen}
+                    />
+                }
             </div>
             <div
                 className="row"
                 id="resultpage"
             >
-                <div className="col-md-3">
-                    <Filter 
-                        query={location.search}
-                        name={products && products[0].title}
-                    />
-                </div>
-                <div className="col-md-8">
+                {
+                    smallWidth
+                    ? <Modal
+                        open={open}
+                        onClose={() => setOpen(false)}
+                        className="d-flex w-100 justify-content-center align-items-center"
+                    >
+                        <Filter
+                            query={location.search}
+                            smallWidth={smallWidth}
+                        />
+                    </Modal>
+                    : <div className="col-md-3">
+                        <Filter 
+                            query={location.search}
+                            name={params.get('q')}
+                            smallWidth={smallWidth}
+                        />
+                    </div>
+                }
+                <div className="col-md-9 col-sm-12 col-12">
                     {
                         loading //Loading spinner | Spinner de carga
                             ? <div className="d-flex justify-content-center align-items-center h-100">

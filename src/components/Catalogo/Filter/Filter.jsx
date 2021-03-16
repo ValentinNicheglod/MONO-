@@ -4,7 +4,7 @@ import { NavLink, useHistory, useParams } from "react-router-dom";
 
 import "./Filter.css";
 
-export const Filter = ({name, query}) => {
+export const Filter = ({name, query, smallWidth}) => {
 
     let {filter, page, sort} = useParams();
     let history = useHistory();
@@ -15,17 +15,25 @@ export const Filter = ({name, query}) => {
     
     return(
 
-        <div id="filter" className="card">
+        <div 
+            id={smallWidth ? 'filter-modal' : 'filter'} 
+            className="card"
+        >
 
-            <h1>
-                {name && name.split(" ")[0]}
-            </h1>
-            <hr/>
+            {
+                !smallWidth &&
+                <>
+                    <h1>
+                        {name}
+                    </h1>
+                    <hr/>
+                </>
+            }
             {
                 filter !== undefined //Shows only if a filter was selected | Se muestra solo si se seleccionó un filtro
                 ? <>
                 <div className="row">
-                    <span className="col-md-7">
+                    <span className="col-md-7 col-sm-6 col-6">
                         <b>Filtros seleccionados: &nbsp;</b>
                     </span>
                     <Chip

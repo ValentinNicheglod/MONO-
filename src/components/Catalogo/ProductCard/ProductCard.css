@@ -6,11 +6,7 @@
     color: red;
 }
 
-.max-width{
-    max-width: 1000px;
-}
-
 .chip{
-    width: 120px;
+    width: 80%;
     margin: 10px;
 }

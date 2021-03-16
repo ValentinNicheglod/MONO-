@@ -15,7 +15,6 @@ export const SearchBar = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(history.location.pathname)
         history.location.pathname === "/"
         ? history.push(`search/destacados/1?q=${search}`)
         : history.push(`?q=${search}`);
@@ -26,7 +25,7 @@ export const SearchBar = () => {
 
         <form onSubmit={handleSubmit}>
             <input
-                className="form-control col-md-8 border border-danger"
+                className="form-control col-md-8 col-sm-8 col-8 border border-danger"
                 type="text"
                 placeholder="Ingresa tu busqueda..."
                 onChange={handleChange}
@@ -34,7 +33,7 @@ export const SearchBar = () => {
                 id="input"
             />
             <input
-                className="btn btn-outline-danger col-md-3"
+                className="btn btn-outline-danger col-md-3 col-sm-3 col-3"
                 type="submit"
                 id="button"
                 value="Buscar"
